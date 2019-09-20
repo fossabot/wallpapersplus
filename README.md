@@ -10,21 +10,21 @@
 
 ## Usage
 
--   Just copy all Images into the following folder
+- Just copy all Images into the following folder
 
 ```sh
 "/src/images/walls"
 ```
 
--   Stage the changes (pictures)
+- Stage the changes (pictures)
 
--   Push it to Github
+- Push it to Github
 
--   Done
+- Done
 
--   Let the magic do the rest
+- Let the magic do the rest
 
--   After a few minutes the changes will be live :)
+- After a few minutes the changes will be live :)
 
 ## License
 

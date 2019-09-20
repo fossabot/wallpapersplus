@@ -52,7 +52,7 @@ function Gallery() {
                   </span>
                 </div>
 
-                <span className="text-gray-900 text-lg text-center leading-tight font-semibold">
+                <span className="text-gray-700 text-lg text-center leading-tight font-semibold">
                   {node.name}
                 </span>
                 <div className="flex">

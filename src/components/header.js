@@ -2,16 +2,15 @@ import { Link } from "gatsby";
 import PropTypes from "prop-types";
 import React, { useState } from "react";
 
-import Logo from "../images/favicon.svg";
 
 function Header({ siteTitle }) {
   const [isExpanded, toggleExpansion] = useState(false);
 
   return (
-    <nav className="bg-blue-800">
+    <nav className="bg-blue-800 MenuItems">
       <div className="flex flex-wrap items-center align-center justify-between max-w-4xl mx-auto p-4 md:p-8">
         <Link to="/" className="flex items-center no-underline text-white">
-          <span>Wallpaper+</span>
+          <span className="text-xl font-semibold">Wallpaper+</span>
         </Link>
 
         <button
@@ -33,7 +32,7 @@ function Header({ siteTitle }) {
             isExpanded ? `block` : `hidden`
           } md:block md:flex md:items-center w-full md:w-auto`}
         >
-          <div className="MenuItems">
+          <div className="">
             <Link
               to="/"
               className="block md:inline-block mt-4 md:mt-0 mr-6 no-underline text-white"
