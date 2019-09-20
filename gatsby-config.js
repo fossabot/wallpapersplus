@@ -10,6 +10,19 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-theme-ui`,
     {
+      resolve: `gatsby-plugin-cookiehub`,
+      options: {
+        // your cookiehub widget ID
+        cookihubId: `67569ecb`,
+        // your google analytics tracking id
+        trackingId: `UA-148437297-1`,
+        // Puts tracking script in the head instead of the body
+        head: false,
+        // enable ip anonymization
+        anonymize: true,
+      },
+    },
+    {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         // replace "UA-XXXXXXXXX-X" with your own Tracking ID
