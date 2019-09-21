@@ -19,36 +19,36 @@ module.exports = {
         // Puts tracking script in the head instead of the body
         head: false,
         // enable ip anonymization
-        anonymize: true,
-      },
+        anonymize: true
+      }
     },
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         // replace "UA-XXXXXXXXX-X" with your own Tracking ID
-        trackingId: "UA-148437297-1",
-      },
+        trackingId: "UA-148437297-1"
+      }
     },
     {
-    resolve: "gatsby-plugin-google-tagmanager",
-    options: {
-      id: "GTM-PLZW9T7",
+      resolve: "gatsby-plugin-google-tagmanager",
+      options: {
+        id: "GTM-PLZW9T7",
 
-      // Include GTM in development.
-      // Defaults to false meaning GTM will only be loaded in production.
-      includeInDevelopment: false,
+        // Include GTM in development.
+        // Defaults to false meaning GTM will only be loaded in production.
+        includeInDevelopment: false,
 
-      // datalayer to be set before GTM is loaded
-      // should be an object or a function that is executed in the browser
-      // Defaults to null
-      defaultDataLayer: { platform: "gatsby" },
+        // datalayer to be set before GTM is loaded
+        // should be an object or a function that is executed in the browser
+        // Defaults to null
+        defaultDataLayer: { platform: "gatsby" }
 
-      // Specify optional GTM environment details.
-      // gtmAuth: "YOUR_GOOGLE_TAGMANAGER_ENVIRONMENT_AUTH_STRING",
-      // gtmPreview: "YOUR_GOOGLE_TAGMANAGER_ENVIRONMENT_PREVIEW_NAME",
-      // dataLayerName: "YOUR_DATA_LAYER_NAME",
+        // Specify optional GTM environment details.
+        // gtmAuth: "YOUR_GOOGLE_TAGMANAGER_ENVIRONMENT_AUTH_STRING",
+        // gtmPreview: "YOUR_GOOGLE_TAGMANAGER_ENVIRONMENT_PREVIEW_NAME",
+        // dataLayerName: "YOUR_DATA_LAYER_NAME",
+      }
     },
-  },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
