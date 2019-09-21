@@ -10,24 +10,16 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-theme-ui`,
     {
-      resolve: `gatsby-plugin-cookiehub`,
+      resolve: `gatsby-plugin-gdpr-cookies`,
       options: {
-        // your cookiehub widget ID
-        cookihubId: `67569ecb`,
-        // your google analytics tracking id
-        trackingId: `UA-148437297-1`,
-        // Puts tracking script in the head instead of the body
-        head: false,
-        // enable ip anonymization
-        anonymize: true
-      }
-    },
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        // replace "UA-XXXXXXXXX-X" with your own Tracking ID
-        trackingId: "UA-148437297-1"
-      }
+        googleAnalytics: {
+          trackingId: 'UA-148437297-1',
+          // Setting this parameter is optional
+          anonymize: true
+        },
+        // Defines the environments where the tracking should be available  - default is ["production"]
+        environments: ['production', 'development']
+      },
     },
     {
       resolve: "gatsby-plugin-google-tagmanager",
