@@ -52,9 +52,7 @@ function Gallery() {
                   </span>
                 </div>
 
-                <span className="text-gray-700 text-lg text-center leading-tight font-semibold">
-                  {node.name}
-                </span>
+
                 <div className="flex">
                   <button className="w-full bg-blue-500 hover:bg-transparent font-semibold hover:text-blue-700 text-white mt-2 px-4 border border-blue-500 text-xs rounded">
                     {node.prettySize}
