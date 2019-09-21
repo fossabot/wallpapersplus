@@ -1,5 +1,5 @@
 import React from "react";
-import { graphql, useStaticQuery, Link } from "gatsby";
+import { graphql, useStaticQuery } from "gatsby";
 
 function Gallery() {
   const ImgQuery = useStaticQuery(graphql`
@@ -23,7 +23,7 @@ function Gallery() {
   `);
   return (
     <div>
-      <div className="flex flex-wrap justify-between sm:justify-center xs:justify-center">
+      <div className="flex flex-wrap justify-center">
         {ImgQuery.allFile.edges.map(({ node }) => (
           <a href={node.publicURL} target="_blank" rel="noopener noreferrer">
             <div
