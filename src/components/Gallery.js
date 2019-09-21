@@ -23,13 +23,6 @@ function Gallery() {
   `);
   return (
     <div>
-      <div>
-        <Link to="/">
-          <button className="rounded-full h-16 w-16 text-xl p-4 bg-gray-800 text-teal-100 float-right">
-            {ImgQuery.allFile.totalCount}
-          </button>
-        </Link>
-      </div>
       <div className="flex flex-wrap justify-between sm:justify-center xs:justify-center">
         {ImgQuery.allFile.edges.map(({ node }) => (
           <a href={node.publicURL} target="_blank" rel="noopener noreferrer">
