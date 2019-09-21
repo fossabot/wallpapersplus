@@ -10,36 +10,15 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-theme-ui`,
     {
-      resolve: `gatsby-plugin-gdpr-cookies`,
+      resolve: `gatsby-plugin-gtag`,
       options: {
-        googleAnalytics: {
-          trackingId: 'UA-148437297-1',
-          // Setting this parameter is optional
-          anonymize: true
-        },
-        // Defines the environments where the tracking should be available  - default is ["production"]
-        environments: ['production', 'development']
+        // your google analytics tracking id
+        trackingId: `UA-148437297-1 `,
+        // Puts tracking script in the head instead of the body
+        head: false,
+        // enable ip anonymization
+        anonymize: true,
       },
-    },
-    {
-      resolve: "gatsby-plugin-google-tagmanager",
-      options: {
-        id: "GTM-PLZW9T7",
-
-        // Include GTM in development.
-        // Defaults to false meaning GTM will only be loaded in production.
-        includeInDevelopment: false,
-
-        // datalayer to be set before GTM is loaded
-        // should be an object or a function that is executed in the browser
-        // Defaults to null
-        defaultDataLayer: { platform: "gatsby" }
-
-        // Specify optional GTM environment details.
-        // gtmAuth: "YOUR_GOOGLE_TAGMANAGER_ENVIRONMENT_AUTH_STRING",
-        // gtmPreview: "YOUR_GOOGLE_TAGMANAGER_ENVIRONMENT_PREVIEW_NAME",
-        // dataLayerName: "YOUR_DATA_LAYER_NAME",
-      }
     },
     {
       resolve: `gatsby-plugin-manifest`,

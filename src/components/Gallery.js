@@ -25,12 +25,18 @@ function Gallery() {
     <div>
       <div className="flex flex-wrap justify-center">
         {ImgQuery.allFile.edges.map(({ node }) => (
-          <a href={node.publicURL} target="_blank" rel="noopener noreferrer">
+          <a
+            href={node.publicURL}
+            key={node.id}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <div
               key={node.id}
               className="shadow-2xl border overflow-hidden rounded-lg mx-2 my-4 p-2 bg-white"
             >
               <img
+                key={node.id}
                 src={node.publicURL}
                 className="rounded-lg w-64 "
                 alt={node.base}
