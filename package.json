@@ -16,6 +16,7 @@
     "gatsby-plugin-algolia": "^0.3.4",
     "gatsby-plugin-gtag": "^1.0.11",
     "gatsby-plugin-manifest": "2.2.12",
+    "gatsby-plugin-nprogress": "^2.1.7",
     "gatsby-plugin-offline": "3.0.0",
     "gatsby-plugin-postcss": "2.1.5",
     "gatsby-plugin-purgecss": "4.0.1",
