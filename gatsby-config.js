@@ -38,7 +38,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-tailwind`,
+        name: `WPlus`,
         short_name: `WPlus`,
         start_url: `/`,
         background_color: `#ffffff`,

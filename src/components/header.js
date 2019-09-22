@@ -1,12 +1,21 @@
 import { Link } from "gatsby";
 import PropTypes from "prop-types";
 import React, { useState } from "react";
+import { graphql, useStaticQuery } from "gatsby";
 
 import { Alert } from "antd";
 import "antd/dist/antd.css";
 
 function Header({ siteTitle }) {
   const [isExpanded, toggleExpansion] = useState(false);
+
+  const Query = useStaticQuery(graphql`
+    query Images2 {
+      allFile {
+        totalCount
+      }
+    }
+  `)
 
   return (
     <div>
@@ -40,7 +49,7 @@ function Header({ siteTitle }) {
                 to="/"
                 className="block md:inline-block mt-4 md:mt-0 mr-6 no-underline text-white"
               >
-                Home
+                Home - {Query.allFile.totalCount}
               </Link>
 
               <a
