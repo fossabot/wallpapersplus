@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Wallpapersplus`,
+    title: `WPlus`,
     description: `Wallpapers for iOS devices`,
     author: `@mozart409`
   },
@@ -39,7 +39,7 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `gatsby-starter-tailwind`,
-        short_name: `starter`,
+        short_name: `WPlus`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#4dc0b5`,

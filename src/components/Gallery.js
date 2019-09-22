@@ -42,14 +42,7 @@ function Gallery() {
                 alt={node.base}
               />
               <div className="p-2">
-                <div className="flex justify-between items-center ">
-                  <span className="text-gray-600 text-xs font-semibold">
-                    {node.birthTime}
-                  </span>
-                  <span className="text-right text-gray-600 tracking-wider text-xs font-semibold">
-                    {node.ext}
-                  </span>
-                </div>
+
 
                 <div className="flex">
                   <button className="w-full bg-blue-500 hover:bg-transparent font-semibold hover:text-blue-700 text-white mt-2 px-4 border border-blue-500 text-xs rounded">
