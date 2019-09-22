@@ -13,7 +13,7 @@ function IndexPage() {
         title="Home"
         keywords={[`gatsby`, `tailwind`, `Wallpaperplus`, `iOS`, `Gallery`]}
       />
-    <Script url="../components/scripts/alert.js"></Script>
+      <Script url="../components/scripts/alert.js"></Script>
       <CookieScript></CookieScript>
       <div className="">
         <Gallery></Gallery>

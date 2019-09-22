@@ -7,11 +7,11 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
-    resolve: `gatsby-plugin-sharp`,
-    options: {
-      stripMetadata: false,
+      resolve: `gatsby-plugin-sharp`,
+      options: {
+        stripMetadata: false
+      }
     },
-  },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-theme-ui`,
     {
@@ -25,14 +25,7 @@ module.exports = {
         anonymize: true
       }
     },
-    {
-      resolve: 'gatsby-plugin-page-progress',
-      options: {
-        height: 3,
-        prependToBody: false,
-        color: `#663399`,
-      }
-    },
+    `gatsby-plugin-page-progress`,
     {
       resolve: `gatsby-plugin-nprogress`,
       options: {
