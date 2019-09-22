@@ -6,7 +6,12 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-sharp`,
+    {
+    resolve: `gatsby-plugin-sharp`,
+    options: {
+      stripMetadata: false,
+    },
+  },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-theme-ui`,
     {
@@ -17,8 +22,25 @@ module.exports = {
         // Puts tracking script in the head instead of the body
         head: false,
         // enable ip anonymization
-        anonymize: true,
-      },
+        anonymize: true
+      }
+    },
+    {
+      resolve: 'gatsby-plugin-page-progress',
+      options: {
+        height: 3,
+        prependToBody: false,
+        color: `#663399`,
+      }
+    },
+    {
+      resolve: `gatsby-plugin-nprogress`,
+      options: {
+        // Setting a color is optional.
+        color: `tomato`,
+        // Disable the loading spinner.
+        showSpinner: true
+      }
     },
     {
       resolve: `gatsby-plugin-manifest`,

@@ -26,7 +26,7 @@ function Layout({ children }) {
         {children}
       </main>
 
-      <footer className="bg-blue-900">
+      <footer className="FooterColor">
         <nav className="flex justify-between max-w-4xl MenuItems mx-auto p-4 md:p-8 text-md">
           <p className="text-white">Created by </p>
           <a
