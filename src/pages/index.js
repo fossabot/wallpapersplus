@@ -4,16 +4,14 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 import Gallery from "../components/Gallery";
 import CookieScript from "../components/CookieScript";
-import Script from "react-load-script";
 
 function IndexPage() {
   return (
     <Layout>
       <SEO
         title="Home"
-        keywords={[`gatsby`, `tailwind`, `Wallpaperplus`, `iOS`, `Gallery`]}
+        keywords={[`iPhone`,`reddit`,`jailbreak`,`cydia`,`sileo`,`unc0ver`, `Wallpapers`, `Wallpaperplus`, `iOS`, `Gallery`, `wallpaper`, `image`, `images`, `sileo`]}
       />
-      <Script url="../components/scripts/alert.js"></Script>
       <CookieScript></CookieScript>
       <div className="">
         <Gallery></Gallery>
