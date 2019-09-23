@@ -57,7 +57,7 @@
     "fix:lint": "eslint --ext .jsx --ext .js . --fix",
     "fix:prettier": "prettier --write '**/*.{js,css,md,json}'",
     "fix": "clear && yarn run fix:lint && yarn run fix:prettier",
-    "start": "clear && yarn run develop",
+    "start": "clear && yarn fix && yarn run develop",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
   },

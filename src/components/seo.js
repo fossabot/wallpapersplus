@@ -31,20 +31,8 @@ function SEO({ description, lang, meta, keywords, title }) {
           content: metaDescription
         },
         {
-          property: `og:title`,
-          content: title
-        },
-        {
-          property: `og:description`,
-          content: metaDescription
-        },
-        {
-          property: `og:type`,
-          content: `website`
-        },
-        {
-          name: `twitter:card`,
-          content: `summary`
+          name: `apple-mobile-web-app-capable`,
+          content: `yes`
         }
       ]
         .concat(
