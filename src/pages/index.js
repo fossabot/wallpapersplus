@@ -4,6 +4,8 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 import Gallery from "../components/Gallery";
 import CookieScript from "../components/CookieScript";
+import { Icon } from "antd";
+import Back2Top from "react-back2top";
 
 function IndexPage() {
   return (
@@ -28,6 +30,14 @@ function IndexPage() {
         ]}
       />
       <CookieScript></CookieScript>
+      <Back2Top>
+        <button>
+          <Icon
+            className="bg-gray-900 rounded-full m-2 p-4 align-baseline "
+            type="up"
+          />
+        </button>
+      </Back2Top>
       <div className="">
         <Gallery></Gallery>
       </div>

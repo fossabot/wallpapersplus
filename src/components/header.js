@@ -9,8 +9,8 @@ import "antd/dist/antd.css";
 function Header({ siteTitle }) {
   const [isExpanded, toggleExpansion] = useState(false);
 
-  const Query = useStaticQuery(graphql`
-    query Images2 {
+  const Query2 = useStaticQuery(graphql`
+    query WallZip {
       allFile {
         totalCount
       }
@@ -22,7 +22,9 @@ function Header({ siteTitle }) {
       <nav className="MenuColor MenuItems">
         <div className="flex flex-wrap items-center align-center justify-between max-w-4xl mx-auto p-4 md:p-8">
           <Link to="/" className="flex items-center no-underline text-white">
-            <span className="text-xl font-semibold">WPlus</span>
+            <span className="text-xl font-semibold">
+              WPlus - {Query2.allFile.totalCount}
+            </span>
           </Link>
 
           <button
@@ -49,12 +51,17 @@ function Header({ siteTitle }) {
                 to="/"
                 className="block md:inline-block mt-4 md:mt-0 mr-6 no-underline text-white"
               >
-                Home -{" "}
-                <span className="tracking-wide hover:font-semibold ">
-                  {Query.allFile.totalCount}
-                </span>
+                Home
               </Link>
 
+              <a
+                className="inline-block md:inline-block mt-4 md:mt-0 mr-6 no-underline text-white align-baseline"
+                href="https://drive.google.com/file/d/1NvAmp69DBgTwEuv1ohwRHk5VxIKyo_E1/view"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Download All
+              </a>
               <a
                 href="https://docs.google.com/forms/d/e/1FAIpQLSc-uso8pBFo_geQoxMFrOe8_mmhrma_1y9qTJjdtghfY6UvPg/viewform"
                 className="block md:inline-block mt-4 md:mt-0 mr-6 no-underline text-white"
