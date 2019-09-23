@@ -10,7 +10,22 @@ function IndexPage() {
     <Layout>
       <SEO
         title="Home"
-        keywords={[`iPhone`,`reddit`,`jailbreak`,`cydia`,`sileo`,`unc0ver`, `Wallpapers`, `Wallpaperplus`, `iOS`, `Gallery`, `wallpaper`, `image`, `images`, `sileo`]}
+        keywords={[
+          `iPhone`,
+          `reddit`,
+          `jailbreak`,
+          `cydia`,
+          `sileo`,
+          `unc0ver`,
+          `Wallpapers`,
+          `Wallpaperplus`,
+          `iOS`,
+          `Gallery`,
+          `wallpaper`,
+          `image`,
+          `images`,
+          `sileo`
+        ]}
       />
       <CookieScript></CookieScript>
       <div className="">

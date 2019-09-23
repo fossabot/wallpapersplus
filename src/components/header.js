@@ -15,7 +15,7 @@ function Header({ siteTitle }) {
         totalCount
       }
     }
-  `)
+  `);
 
   return (
     <div>
@@ -49,10 +49,11 @@ function Header({ siteTitle }) {
                 to="/"
                 className="block md:inline-block mt-4 md:mt-0 mr-6 no-underline text-white"
               >
-                Home - <span className="tracking-wide hover:font-semibold ">{Query.allFile.totalCount}</span>
+                Home -{" "}
+                <span className="tracking-wide hover:font-semibold ">
+                  {Query.allFile.totalCount}
+                </span>
               </Link>
-
-
 
               <a
                 href="https://docs.google.com/forms/d/e/1FAIpQLSc-uso8pBFo_geQoxMFrOe8_mmhrma_1y9qTJjdtghfY6UvPg/viewform"
