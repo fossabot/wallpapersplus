@@ -29,6 +29,7 @@
     "prop-types": "15.7.2",
     "react": "16.9.0",
     "react-dom": "16.9.0",
+    "react-gallery": "^0.1.0",
     "react-helmet": "5.2.1",
     "react-instantsearch-dom": "^5.7.0",
     "react-load-script": "^0.0.6",
@@ -58,7 +59,7 @@
     "fix:lint": "eslint --ext .jsx --ext .js . --fix",
     "fix:prettier": "prettier --write '**/*.{js,jsx,css,md,json}'",
     "fix": "clear && yarn run fix:lint && yarn run fix:prettier",
-    "start": "clear && yarn fix && yarn run develop",
+    "start": "clear && yarn run develop",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
   },

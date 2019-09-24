@@ -7,11 +7,11 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
-    resolve: `gatsby-plugin-sharp`,
-    options: {
-      stripMetadata: false,
+      resolve: `gatsby-plugin-sharp`,
+      options: {
+        stripMetadata: false
+      }
     },
-  },
 
     `gatsby-transformer-sharp`,
     `gatsby-plugin-theme-ui`,
@@ -53,6 +53,13 @@ module.exports = {
       options: {
         name: `images`,
         path: `${__dirname}/src/images/walls`
+      }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images/walls/featured`
       }
     },
 

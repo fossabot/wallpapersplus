@@ -3,6 +3,7 @@ import React from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import Gallery from "../components/Gallery";
+import FeaturedGallery from "../components/FeaturedGallery";
 import CookieScript from "../components/CookieScript";
 import ScrollToTop from "react-scroll-up";
 
@@ -35,6 +36,7 @@ function IndexPage() {
         </span>
       </ScrollToTop>
       <div className="">
+        <FeaturedGallery></FeaturedGallery>
         <Gallery></Gallery>
       </div>
     </Layout>
