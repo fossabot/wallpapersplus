@@ -6,7 +6,12 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-sharp`,
+    {
+    resolve: `gatsby-plugin-sharp`,
+    options: {
+      stripMetadata: false,
+    },
+  },
 
     `gatsby-transformer-sharp`,
     `gatsby-plugin-theme-ui`,

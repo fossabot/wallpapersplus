@@ -1,5 +1,6 @@
 import React from "react";
 import { graphql, useStaticQuery } from "gatsby";
+import Img from "gatsby-image";
 
 function Gallery() {
   const ImgQuery = useStaticQuery(graphql`
@@ -15,6 +16,11 @@ function Gallery() {
             publicURL
             ext
             mode
+            childImageSharp {
+              fluid(fit: FILL) {
+                ...GatsbyImageSharpFluid_withWebp_tracedSVG
+              }
+            }
           }
         }
         totalCount
@@ -35,9 +41,9 @@ function Gallery() {
               key={node.id}
               className="shadow-2xl border overflow-hidden rounded-lg mx-2 my-4 p-2 bg-white"
             >
-              <img
+              <Img
                 key={node.id}
-                src={node.publicURL}
+                sizes={node.childImageSharp.fluid}
                 className="rounded-lg w-64 "
                 alt={node.base}
               />
