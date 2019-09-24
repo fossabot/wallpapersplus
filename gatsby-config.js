@@ -54,13 +54,7 @@ module.exports = {
         path: `${__dirname}/src/images/walls`
       }
     },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `zip`,
-        path: `${__dirname}/src/images/walls.zip`
-      }
-    },
+
     `gatsby-plugin-postcss`,
     {
       resolve: `gatsby-plugin-purgecss`,
