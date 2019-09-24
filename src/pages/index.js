@@ -4,8 +4,7 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 import Gallery from "../components/Gallery";
 import CookieScript from "../components/CookieScript";
-import { Icon } from "antd";
-import Back2Top from "react-back2top";
+import ScrollToTop from "react-scroll-up";
 
 function IndexPage() {
   return (
@@ -30,14 +29,14 @@ function IndexPage() {
         ]}
       />
       <CookieScript></CookieScript>
-      <Back2Top>
-        <button>
-          <Icon
-            className="bg-gray-900 rounded-full m-2 p-4 align-baseline "
-            type="up"
-          />
-        </button>
-      </Back2Top>
+      <ScrollToTop
+        showUnder={160}
+
+        >
+        <span
+          className="bg-blue-700 cursor-pointer float-right -mr-6 p-3 text-white hover:text-gray-200 text-lg hover:shadow-2xl shadow-lg rounded-full"
+          >UP</span>
+      </ScrollToTop>
       <div className="">
         <Gallery></Gallery>
       </div>
