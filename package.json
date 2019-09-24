@@ -27,6 +27,7 @@
     "gatsby-source-filesystem": "^2.1.22",
     "gatsby-transformer-sharp": "^2.2.14",
     "graphql": "14.5.4",
+    "libvips": "^0.0.2",
     "prop-types": "15.7.2",
     "react": "16.9.0",
     "react-back2top": "^0.1.6",
@@ -35,6 +36,7 @@
     "react-instantsearch-dom": "^5.7.0",
     "react-load-script": "^0.0.6",
     "rebass": "^4.0.5",
+    "sharp": "^0.23.0",
     "theme-ui": "^0.2.42",
     "typeface-raleway": "^0.0.75"
   },
