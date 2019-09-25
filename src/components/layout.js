@@ -6,6 +6,7 @@ import Header from "./header";
 
 import "typeface-raleway";
 import "../css/fonts.css";
+import "../css/Gallery.css";
 
 function Layout({ children }) {
   const data = useStaticQuery(graphql`

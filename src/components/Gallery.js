@@ -18,7 +18,7 @@ function Gallery() {
             mode
             childImageSharp {
               fluid(fit: FILL) {
-                ...GatsbyImageSharpFluid_withWebp_tracedSVG
+                ...GatsbyImageSharpFluid_tracedSVG
               }
             }
           }
@@ -29,7 +29,7 @@ function Gallery() {
   `);
   return (
     <div>
-      <div className="flex flex-wrap justify-center">
+      <div className="justify-center flex flex-wrap">
         {ImgQuery.allFile.edges.map(({ node }) => (
           <a
             href={node.publicURL}
