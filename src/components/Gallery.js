@@ -5,7 +5,7 @@ import Img from "gatsby-image";
 function Gallery() {
   const ImgQuery = useStaticQuery(graphql`
     query Images {
-      allFile(sort: {fields: birthtime}) {
+      allFile(sort: { fields: birthtime }) {
         edges {
           node {
             name

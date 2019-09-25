@@ -29,12 +29,7 @@ function FeaturedGallery() {
     <div className="justify-center">
       <h2 className="text-gray-900 font-semibold text-2xl">Featured Gallery</h2>
       <div className="">
-        <Carousel
-          dots="true"
-          effect="fade"
-          autoplay
-          className="mb-4"
-        >
+        <Carousel dots="true" effect="fade" autoplay className="mb-4 bg-gray-200 rounded-lg">
           {ImgFeatured.allFile.edges.map(({ node }) => (
             <a
               href={node.publicURL}

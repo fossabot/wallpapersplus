@@ -26,16 +26,6 @@ module.exports = {
         anonymize: true
       }
     },
-    `gatsby-plugin-page-progress`,
-    {
-      resolve: `gatsby-plugin-nprogress`,
-      options: {
-        // Setting a color is optional.
-        color: `tomato`,
-        // Disable the loading spinner.
-        showSpinner: true
-      }
-    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -67,7 +57,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-purgecss`,
       options: {
-        printRejected: true,
+        printRejected: false,
         develop: false,
         tailwind: true,
         purgeOnly: [`src/css/`]

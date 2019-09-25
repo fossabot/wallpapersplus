@@ -38,6 +38,7 @@ function IndexPage() {
       </ScrollToTop>
       <div className="">
         <FeaturedGallery></FeaturedGallery>
+    
       </div>
       <div className="">
         <Gallery></Gallery>
