@@ -8,3 +8,8 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+.PageProgress {
+  position: sticky;
+  top: 0;
+}
