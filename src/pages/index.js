@@ -14,7 +14,7 @@ function IndexPage() {
 
   updateOnScroll(0.0, 1.0, progress => {
     setPageProgress(PageProgress+1);
-    console.log(PageProgress);
+    
   });
 
 
