@@ -15,7 +15,7 @@ function FeaturedGallery() {
             prettySize
             childImageSharp {
               fluid(fit: FILL) {
-                ...GatsbyImageSharpFluid_tracedSVG
+                ...GatsbyImageSharpFluid
               }
             }
           }

@@ -18,7 +18,7 @@ function Gallery() {
             mode
             childImageSharp {
               fluid(fit: FILL) {
-                ...GatsbyImageSharpFluid_tracedSVG
+                ...GatsbyImageSharpFluid
               }
             }
           }

@@ -5,8 +5,7 @@ import { Progress } from "antd";
 function PageProgress() {
   const [progress, setProgress] = useState(0);
   updateOnScroll(0, 1, progress => {
-    setProgress(progress * 100);
-    console.log({ progress });
+    setProgress((progress * 100).toFixed(3));
   });
 
   return (
