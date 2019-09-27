@@ -57,10 +57,10 @@ module.exports = {
     {
       resolve: `gatsby-plugin-purgecss`,
       options: {
-        printRejected: false,
+        printRejected: true,
         develop: false,
         tailwind: true,
-        purgeOnly: [`src/css/`]
+        purgeOnly: [`src/css/style.css`]
       }
     },
     `gatsby-plugin-offline`
