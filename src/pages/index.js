@@ -9,7 +9,6 @@ import CookieScript from "../components/CookieScript";
 import ScrollToTop from "react-scroll-up";
 
 function IndexPage() {
-
   return (
     <div>
       <Layout>

@@ -1,7 +1,7 @@
 import React from "react";
 import { graphql, useStaticQuery } from "gatsby";
 import Img from "gatsby-image";
-import { Carousel } from "antd";
+import { Carousel, Icon } from "antd";
 
 function FeaturedGallery() {
   const ImgFeatured = useStaticQuery(graphql`
@@ -36,19 +36,37 @@ function FeaturedGallery() {
           className="mb-4 bg-gray-200 rounded-lg"
         >
           {ImgFeatured.allFile.edges.map(({ node }) => (
-            <a
-              href={node.publicURL}
-              key={node.id}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Img
-                key={node.id}
-                sizes={node.childImageSharp.fluid}
-                className="rounded-lg w-64 mx-auto border-2 border-gray-800 my-8"
-                alt={node.base}
+            <div className="flex">
+              <Icon
+                className="text-center float-left justify-center self-auto"
+                style={{ fontSize: "2rem", color: "#3c3c3c" }}
+                type="left-circle"
+                theme="filled"
+                onClick=""
               />
-            </a>
+              <a
+                href={node.publicURL}
+                key={node.id}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div>
+                  <Img
+                    key={node.id}
+                    sizes={node.childImageSharp.fluid}
+                    className="rounded-lg w-64 mx-auto border-2 border-gray-800 my-8"
+                    alt={node.base}
+                  />
+                </div>
+              </a>
+              <Icon
+                className="text-center float-right justify-center"
+                style={{ fontSize: "2rem", color: "#3c3c3c" }}
+                type="right-circle"
+                theme="filled"
+                onClick="next()"
+              />
+            </div>
           ))}
         </Carousel>
       </div>
