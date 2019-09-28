@@ -31,7 +31,7 @@ function IndexPage() {
         ]}
       />
       <CookieScript></CookieScript>
-      <PageProgress></PageProgress>
+      
       <BackTop></BackTop>
 
       <div>

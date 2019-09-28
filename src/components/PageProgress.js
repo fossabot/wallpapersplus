@@ -6,7 +6,6 @@ function PageProgress() {
   const [progress, setProgress] = useState(0);
   updateOnScroll(0, 1, progress => {
     let letProgress = (progress * 100).toFixed(3);
-    console.log(letProgress);
     setProgress(letProgress);
   });
 
