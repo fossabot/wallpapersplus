@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, {} from "react";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
@@ -10,7 +10,7 @@ import ScrollToTop from "react-scroll-up";
 
 function IndexPage() {
   return (
-    <div>
+
       <Layout>
         <SEO
           title="Home"
@@ -44,7 +44,7 @@ function IndexPage() {
           <Gallery></Gallery>
         </div>
       </Layout>
-    </div>
+
   );
 }
 

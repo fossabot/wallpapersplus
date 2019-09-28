@@ -53,7 +53,7 @@
     "analyze:lint": "eslint --ext .jsx --ext .js .",
     "analyze:prettier": "prettier --list-different '**/*.{js,css,md,json}'",
     "analyze": "yarn run analyze:lint && yarn run analyze:prettier",
-    "build": "gatsby build",
+    "build": "gatsby clean && gatsby build",
     "develop": "gatsby develop -o",
     "fix:lint": "eslint --ext .jsx --ext .js . --fix",
     "fix:prettier": "prettier --write 'src/**/*.{js,jsx,css,md,json}'",
