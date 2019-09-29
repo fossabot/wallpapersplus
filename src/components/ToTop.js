@@ -1,23 +1,13 @@
 import React from "react";
-import { jsx } from "@emotion/core";
-import BackToTop from "react-back-to-top";
+import ScrollToTop from "react-scroll-up";
 
 function ToTop() {
   return (
-    <BackToTop
-      mainStyle={{
-        width: "100%",
-        height: "100%"
-      }}
-      percentStyle={{
-        width: "100%",
-        height: "100%"
-      }}
-      offsetTop={20}
-      step={500}
-      percent={true}
-      visiblePercent={3}
-    ></BackToTop>
+    <ScrollToTop showUnder={160}>
+      <span
+      className="bg-blue-700 text-white p-4 m-2 round hover:shadow-xl"
+      >UP</span>
+    </ScrollToTop>
   );
 }
 export default ToTop;
