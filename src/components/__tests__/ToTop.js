@@ -5,11 +5,7 @@ import ToTop from "../ToTop";
 
 describe("ToTop", () => {
   it("renders correctly", () => {
-    const tree = renderer
-      .create(
-        <ToTop />
-      )
-      .toJSON();
+    const tree = renderer.create(<ToTop />).toJSON();
     expect(tree).toMatchSnapshot();
   });
 });

@@ -14,7 +14,9 @@
     "fix": "clear && yarn run fix:lint && yarn run fix:prettier",
     "start": "clear && yarn run develop",
     "serve": "gatsby serve",
-    "test": "clear && jest"
+    "test": "clear && jest",
+    "storybook": "NODE_ENV=production start-storybook -s public",
+    "build-storybook": "NODE_ENV=production build-storybook -s public"
   },
   "dependencies": {
     "@emotion/core": "^10.0.17",
@@ -23,6 +25,7 @@
     "@rebass/preset": "^4.0.5",
     "antd": "^3.23.4",
     "babel-jest": "^24.9.0",
+    "babel-plugin-remove-graphql-queries": "^2.7.10",
     "babel-preset-gatsby": "^0.2.17",
     "dotenv": "^8.1.0",
     "emotion-theming": "^10.0.18",
@@ -71,9 +74,15 @@
   ],
   "license": "MIT",
   "devDependencies": {
+    "@babel/core": "^7.6.2",
+    "@storybook/addon-actions": "^5.2.1",
+    "@storybook/addon-links": "^5.2.1",
+    "@storybook/addons": "^5.2.1",
+    "@storybook/react": "^5.2.1",
     "@typescript-eslint/eslint-plugin": "2.0.0",
     "@typescript-eslint/parser": "2.0.0",
     "babel-eslint": "10.0.3",
+    "babel-loader": "^8.0.6",
     "eslint": "6.3.0",
     "eslint-config-react-app": "5.0.1",
     "eslint-plugin-flowtype": "4.2.0",

@@ -5,8 +5,7 @@ import { graphql, useStaticQuery } from "gatsby";
 import Header from "./header";
 
 import "typeface-raleway";
-import "../css/fonts.css";
-import "../css/Gallery.css";
+import "../css/main.css";
 
 function Layout({ children }) {
   const data = useStaticQuery(graphql`
