@@ -1,11 +1,11 @@
 import React from "react";
-import BackToTop from "react-back-to-top";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import Gallery from "../components/Gallery";
 import FeaturedGallery from "../components/FeaturedGallery";
 import CookieScript from "../components/CookieScript";
+import ToTop from "../components/ToTop";
 
 function IndexPage() {
   return (
@@ -30,25 +30,10 @@ function IndexPage() {
         ]}
       />
       <CookieScript></CookieScript>
-      <BackToTop
-        mainStyle={{
-          width: "100%",
-          height: "100%"
-        }}
-        percentStyle={{
-          width: "100%",
-          height: "100%"
-        }}
+      <ToTop></ToTop>
 
-        offsetTop={20}
-        step={500}
-        percent={true}
-        visiblePercent={3}
-      ></BackToTop>
-      <div>
-        <FeaturedGallery></FeaturedGallery>
-        <Gallery></Gallery>
-      </div>
+      <FeaturedGallery></FeaturedGallery>
+      <Gallery></Gallery>
     </Layout>
   );
 }
