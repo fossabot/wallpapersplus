@@ -1,16 +1,15 @@
 import React from "react";
+import BackToTop from "react-back-to-top";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import Gallery from "../components/Gallery";
 import FeaturedGallery from "../components/FeaturedGallery";
-import PageProgress from "../components/PageProgress";
 import CookieScript from "../components/CookieScript";
-import BackTop from "../components/BackTop";
 
 function IndexPage() {
   return (
-    <Layout id="anchor_BackTop">
+    <Layout>
       <SEO
         title="Home"
         keywords={[
@@ -31,9 +30,21 @@ function IndexPage() {
         ]}
       />
       <CookieScript></CookieScript>
+      <BackToTop
+        mainStyle={{
+          width: "100%",
+          height: "100%"
+        }}
+        percentStyle={{
+          width: "100%",
+          height: "100%"
+        }}
 
-      <BackTop></BackTop>
-
+        offsetTop={20}
+        step={500}
+        percent={true}
+        visiblePercent={3}
+      ></BackToTop>
       <div>
         <FeaturedGallery></FeaturedGallery>
         <Gallery></Gallery>
