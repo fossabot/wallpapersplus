@@ -19,7 +19,7 @@ function Header({ siteTitle }) {
 
   return (
     <div>
-      <nav className="MenuColor MenuItems">
+      <nav id="MenuColor" className="MenuItems">
         <div className="flex flex-wrap items-center align-center justify-between max-w-4xl mx-auto p-4 md:p-8">
           <Link to="/" className="flex items-center no-underline text-white">
             <span className="text-xl font-semibold">
